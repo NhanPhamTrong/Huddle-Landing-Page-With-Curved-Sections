@@ -1,0 +1,253 @@
+main {
+    .CTA-button {
+        padding: 1.75rem 5.75rem;
+        background-color: $button-background;
+        border: none;
+        border-radius: 100px;
+        box-shadow: 0 5px 20px rgb(130, 130, 200);
+        color: $word-color-1;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    #main-header {
+        padding: 240px 0 100px;
+        text-align: center;
+
+        .container {
+            color: $word-color-3;
+            
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                width: 512px;
+                margin: 2.5rem auto 3.25rem;
+            }
+        }
+    }
+
+    #statistic {
+        .container {
+            display: grid;
+            text-align: center;
+
+            .statistic-background {
+                margin-bottom: 3rem;
+                grid-column: 1/3;
+                grid-row: 1;
+                height: 732px;
+                background: url("../images/screen-mockups.svg") no-repeat top;
+                background-size: contain;
+            }
+    
+            .communities {
+                grid-column: 1;
+                grid-row: 2;
+            }
+    
+            .messages {
+                grid-column: 2;
+                grid-row: 2;
+            }
+    
+            .content {
+                h1 {
+                    color: $word-color-3;
+                    font-size: 5.5rem;
+                }
+    
+                p {
+                    color: $word-color-4;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+
+    section {
+        padding: 10rem 0 9rem;
+
+        .main-content {
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+    
+                .content {
+                    width: 512px;
+                    color: $word-color-3;
+
+                    h2 {
+                        margin-bottom: 1rem;
+                        font-size: 2.5rem;
+                    }
+                }
+    
+                .content-background {
+                    height: 420px;
+                    width: 512px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }   
+        }
+    }
+
+    section:nth-child(3) {
+        margin-top: 12rem;
+        // background:
+        //     url("../images/bg-section-top-desktop-1.svg") no-repeat top,
+        //     url("../images/bg-section-bottom-desktop-1.svg") no-repeat bottom;
+        // background-size: contain;
+        
+        .main-content {
+            background-color: $section-background;
+
+            .container {
+                .content-background {
+                    background-image: url("../images/illustration-grow-together.svg");
+                    background-size: contain;
+                }
+            }   
+        }
+    }
+
+    section:nth-child(4) {
+        margin: 2rem 0;
+
+        .main-content {
+            .container {
+                .content {
+                    order: 2;
+                }
+    
+                .content-background {
+                    order: 1;
+                    background-image: url("../images/illustration-flowing-conversation.svg");
+                    background-size: contain;
+                }
+            }
+        }
+    }
+
+    section:nth-child(5) {
+        margin-bottom: 12rem;
+        // background:
+        //     url("../images/bg-section-top-desktop-2.svg") no-repeat top,
+        //     url("../images/bg-section-bottom-desktop-2.svg") no-repeat bottom;
+        // background-size: contain;
+
+        .main-content {
+            background-color: $section-background;
+
+            .container {
+                .content-background {
+                    background-image: url("../images/illustration-your-users.svg");
+                    background-size: contain;
+                }
+            }
+        }
+    }
+
+    #CTA {
+        margin-bottom: 12rem;
+
+        .container {
+            text-align: center;
+
+            h2 {
+                margin-bottom: 2rem;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    main {
+        #statistic {
+            .container {
+                .statistic-background {
+                    height: 528px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        #main-header {
+            .container {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+
+        #statistic {
+            .container {
+                grid-row-gap: 1rem;
+
+                .statistic-background {
+                    height: 416px;
+                }
+
+                .communities {
+                    grid-column: 1/3;
+                    grid-row: 2;
+                }
+        
+                .messages {
+                    grid-column: 1/3;
+                    grid-row: 3;
+                }
+            }
+        }
+
+        section {
+            .main-content {
+                .container {
+                    flex-direction: column;
+
+                    .content {
+                        order: 2;
+                    }
+        
+                    .content-background {
+                        order: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        #statistic {
+            .container {
+                .statistic-background {
+                    height: 240px;
+                }
+            }
+        }
+
+        section {
+            .main-content {
+                .container {
+                    .content {
+                        width: 100%;
+                    }
+
+                    .content-background {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

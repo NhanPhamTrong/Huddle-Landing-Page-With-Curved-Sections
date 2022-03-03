@@ -1,0 +1,23 @@
+nav {
+    padding-top: 5rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .brand {
+            height: 40px;
+            width: 240px;
+            background: url("../images/logo.svg") no-repeat;
+            background-size: contain;
+        }
+
+        button {
+            padding: 0.5rem 1.75rem;
+            background-color: transparent;
+            border: $button-border solid 1px;
+            border-radius: 100px;
+            color: $word-color-2;
+        }
+    }
+}

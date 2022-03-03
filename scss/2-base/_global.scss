@@ -1,0 +1,57 @@
+body {
+    background-color: $body-background;
+    font-family: 'Open Sans', sans-serif;
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h1, h2, h3 {
+        font-weight: 700;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: $button-background-hover;
+    }
+
+    .container {
+        width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        .container {
+            width: 960px;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body {
+        .container {
+            width: 736px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        .container {
+            width: 576px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        .container {
+            width: 336px;
+        }
+    }
+}
